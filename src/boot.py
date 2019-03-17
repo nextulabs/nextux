@@ -1,4 +1,4 @@
-# Nextux Virtual Machine
+# Nextux
 # Copyright (C) Nextulabs. All Rights Reserved.
 # Please see associated licence for more details.
 
@@ -10,8 +10,6 @@ except ImportError:
 import os
 
 import libs.kernel
-import libs.tty
-import libs.linuxif
 
 try:
     kernel = libs.kernel.Kernel({

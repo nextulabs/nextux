@@ -1,9 +1,11 @@
-# Nextux Virtual Machine
+# Nextux
 # Copyright (C) Nextulabs. All Rights Reserved.
 # Please see associated licence for more details.
 
 import libs.tty
 import libs.ansi
+import libs.procman
+import apps.init
 
 class Kernel:
     def __init__(self, OSInfo):
@@ -18,3 +20,7 @@ class Kernel:
         self.TTY.println(self.OSInfo["copyright"])
         self.TTY.println("")
         self.TTY.println(self.OSInfo["extraInfo"])
+        
+        self.ProcessManager = libs.procman.ProcessManager()
+
+        self.ProcessManager.new(apps.init.Init)

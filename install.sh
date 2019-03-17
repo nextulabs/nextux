@@ -1,4 +1,4 @@
-# Nextux Virtual Machine
+# Nextux
 # Copyright (C) Nextulabs. All Rights Reserved.
 # Please see associated licence for more details.
 
