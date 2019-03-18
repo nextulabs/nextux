@@ -20,6 +20,7 @@ class Kernel:
         self.TTY.println(self.OSInfo["copyright"])
         self.TTY.println("")
         self.TTY.println(self.OSInfo["extraInfo"])
+        self.TTY.println("")
         
         self.ProcessManager = libs.procman.ProcessManager()
 
