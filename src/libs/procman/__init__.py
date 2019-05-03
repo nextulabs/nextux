@@ -13,4 +13,4 @@ class ProcessManager:
         return len(self.processes) - 1
     
     def kill(self, pid):
-        self.processes[pid].kill()
+        self.processes[pid]._events_kill()

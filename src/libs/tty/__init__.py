@@ -22,3 +22,9 @@ class TTY:
 
     def println(self, text):
         self.print(text + "\r\n")
+    
+    def read(self, count = 1):
+        return self.Serial.read(count)
+    
+    def readln(self):
+        return self.Serial.readline()
