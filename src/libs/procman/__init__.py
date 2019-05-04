@@ -6,8 +6,8 @@ class ProcessManager:
     def __init__(self):
         self.processes = []
 
-    def new(self, app):
-        newProc = app(len(self.processes))
+    def new(self, app, args = []):
+        newProc = app(len(self.processes), args)
         self.processes.append(newProc)
 
         return len(self.processes) - 1

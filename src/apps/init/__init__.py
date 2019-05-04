@@ -6,7 +6,7 @@ import templates.app
 import libs.tty
 
 class Init(templates.app.Template_App):
-    def _events_init(self):
+    def _events_init(self, args = []):
         self.TTY = libs.tty.TTY()
 
         self.TTY.println("Initialised!")
