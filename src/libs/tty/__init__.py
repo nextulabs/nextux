@@ -43,10 +43,12 @@ class TTY:
 
             if len(text) > 0: self.ANSI.send("[" + str(min(len(text), scrlenc - 2)) + "D")
 
-            if char != "\r":
+            if char != "\r" and ord(char) != 27 and ord(char) != 79 and ord(char) != 91:
                 if ord(char) == 127:
                     if len(text) > 0:
                         text = text[:-1]
+                    else:
+                        self.print("\a")
                 else:
                     text += char
 
