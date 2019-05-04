@@ -10,3 +10,8 @@ class Init(templates.app.Template_App):
         self.TTY = libs.tty.TTY()
 
         self.TTY.println("Initialised!")
+        self.TTY.print("Type something: ")
+
+        self.TTY.println("You said: " + self.TTY.readln())
+
+        import time; time.sleep(1)
